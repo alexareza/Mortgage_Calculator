@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Mortgage Calculator</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Mortage Calculator HTML Base">
+   <meta name="author" content="Alexa Reza">
+   <link href="MortgageCalculator.css" rel="stylesheet">
+   <script src="MortgageCalculator.js" defer> </script>
+</head> 
+
+<body>
+<h1>Mortgage Calculator</h1>
+<form method="POST">
+   
+   <section>
+      <h3>Please fill in the text boxes with non-negative and floating point numbers where applicable.</h3><br>
+   <p> Principle Amount: <br>
+      <input id="PrincipleAmt" type="text" size="20"><br></p>
+   <p> Yearly Interest Rate: <br>
+      <input id="YIRate" type="text" size="20"><br></p>
+   <p>Loan term in months: <br>
+      <input id="LoanTerm" type="text" size="20"><br></p>
+
+   <input type="button" value="Calculate" onclick="calculate()">
+   <input type = "reset" value = "Clear" >
+   </section>
+   <br>
+   <h2>Calculation Results:</h2>
+
+      <p id="monthPay">Monthly Payments: </p>
+      <p id="sumPayments">Sum of all payments: </p>
+      <p id="totInterest">Total Interest Paid: </p>
+</form>
+</body>
+</html>
